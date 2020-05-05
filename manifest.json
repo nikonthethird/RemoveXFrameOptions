@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "author": "Nikon the Third",
+    "homepage_url": "https://github.com/nikonthethird/RemoveXFrameOptions",
+    "name": "Remove X-Frame-Options Header",
+    "version": "1.0",
+    "description": "Removes the X-Frame-Options header from all responses.",
+    "icons": {
+        "48": "Icons/48.png",
+        "96": "Icons/96.png"
+    },
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": [ "background.js" ]
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "remove_x_frame_options@nikon.the.third"
+        }
+    }
+}
